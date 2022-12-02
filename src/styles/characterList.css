@@ -1,0 +1,23 @@
+.characters--container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 240px);
+	gap: 26px;
+	place-content: center;
+	margin: 3em 0 0 0;
+}
+
+.characters--container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.characters--container span{
+    display: block;
+}
+
+
+@media (max-width: 640px) {
+	.characters--container {
+		grid-template-columns: repeat(auto-fill, 140px);
+	}
+}
